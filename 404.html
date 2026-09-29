@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hangar Apps</title>
-  <meta http-equiv="refresh" content="0; url=https://hangarapps.com/">
+  <script>
+    // Old /app-legal/... links now live at hangarapps.com
+    var p = location.pathname.replace(/^\/app-legal/, '');
+    location.replace('https://hangarapps.com' + p + location.search + location.hash);
+  </script>
 </head>
 <body>
   <p><a href="https://hangarapps.com/">Hangar Apps — app legal &amp; support pages</a></p>
